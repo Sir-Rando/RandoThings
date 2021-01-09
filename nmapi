@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Automating some Nmap bits
+echo input HTB Target IP
+read vartargetip
+echo input HTB Target Name
+read vartargetname
+mkdir /root/Documents/HTB/$vartargetname
+nmap -sC -sV -oA /root/Documents/HTB/$vartargetname/$vartargetname $vartargetip
