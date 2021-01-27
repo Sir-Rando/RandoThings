@@ -22,16 +22,18 @@ echo ----------------------- Copying Files -----------------------
 #Copying files to where they need to go
 cp /home/rando/Downloads/RandoThings/nmapi /home/rando/Documents/Scripts/
 cp /home/rando/Downloads/CheatSheet/hacking_tools_cheat_sheet_v1.1.pdf /home/rando/Documents/CheatSheets/hacking_tools_cheat_sheet_v1.1.pdf
-cp /home/rando/Downloads/RandoThings/skids.sh /home/rando/Documents/Scripts/
-cp /home/rando/Downloads/RandoThings/vpncon.sh /home/rando/Documents/Scripts/
+cp /home/rando/Downloads/RandoThings/skids /home/rando/Documents/Scripts/
+cp /home/rando/Downloads/RandoThings/vpncon /home/rando/Documents/Scripts/
+cp /home/rando/Downloads/RandoThings/CurlCheatSheet /home/rando/Documents/Cheatsheets/
+cp /home/rando/Downloads/RandoThings/MSVenomCheatsheet /home/rando/Documents/Cheatsheets/
 #mv for this one to change name to something more useful than README.md
 mv /home/rando/Downloads/metasploit-cheat-sheet/README.md /home/rando/Downloads/metasploit-cheat-sheet/MetasploitCheatSheet.md
 cp /home/rando/Downloads/metasploit-cheat-sheet/MetasploitCheatSheet.md /home/rando/Documents/CheatSheets/MetasploitCheatSheet.md
 
 echo -------------------- Fixing Permissions ---------------------
 chmod +x /home/rando/Documents/Scripts/nmapi
-chmod +x /home/rando/Documents/Scripts/skids.sh
-chmod +x /home/rando/Documents/Scripts/vpncon.sh
+chmod +x /home/rando/Documents/Scripts/skids
+chmod +x /home/rando/Documents/Scripts/vpncon
 
 echo ------------------ Installing Shit I Like ------------------
 sudo apt-get install kitty
